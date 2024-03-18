@@ -30,6 +30,7 @@ public class traning003 {
 				(double) (score[1][0] + score[1][1]) / score.length);
 
 		System.out.println("추가 학생 번호가 없는지");
+		//주석 확인
 	}
 
 }
