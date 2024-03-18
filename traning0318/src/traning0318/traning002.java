@@ -10,7 +10,7 @@ public class traning002 {
 		text[1] = "Java";
 		text[2] = "Program";
 		System.out.print(text[0] + " " + text[1] + " " + text[2]);
-
+		System.out.print(text[2] + " " + text[1] + " " + text[0]);
 	}
 
 }
