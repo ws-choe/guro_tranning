@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module guro_tranning {
-}
