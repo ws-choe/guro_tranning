@@ -16,6 +16,6 @@ public class traning001 {
 		average = sum / (double) score.length;
 		System.out.printf("합계는 %.13f\n", sum);
 		System.out.printf("평균은 %.2f", average);
-
+		//확인용 주석
 	}
 }
