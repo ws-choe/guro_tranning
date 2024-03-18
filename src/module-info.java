@@ -4,5 +4,5 @@
 /**
  * 
  */
-module hometraning {
+module homeAssignment {
 }
