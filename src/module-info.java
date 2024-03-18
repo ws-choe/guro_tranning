@@ -4,5 +4,5 @@
 /**
  * 
  */
-module traning0307 {
+module guro_tranning {
 }
