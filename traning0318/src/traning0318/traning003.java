@@ -28,6 +28,8 @@ public class traning003 {
 		System.out.println("학생번호2");
 		System.out.printf("국어: %d, 수학: %d, 평균: %.1f\n", score[1][0], score[1][1],
 				(double) (score[1][0] + score[1][1]) / score.length);
+
+		System.out.println("추가 학생 번호가 없는지");
 	}
 
 }
