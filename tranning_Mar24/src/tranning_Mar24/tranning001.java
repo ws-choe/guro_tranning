@@ -4,7 +4,7 @@ public class tranning001 {
 
 	public static void main(String[] args) {
 
-		String test = "OO";
+		String test = "OO2";
 	}
 
 }
