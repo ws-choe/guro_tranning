@@ -29,5 +29,6 @@ public class chap002 {
 		} while (num != ran && cnt < 5);
 		System.out.println("정답입니다.");
 		System.out.println("정답은 " + ran);
+		//주석 처리
 	}
 }
