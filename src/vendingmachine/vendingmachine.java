@@ -57,4 +57,4 @@ public class vendingmachine {
 			System.out.printf("거스름돈은 %d원입니다. 안녕히 가십시오.", money);
 		}
 	}
-}
+} //pull test 주석 처리
