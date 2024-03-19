@@ -3,7 +3,6 @@ package traning0318;
 public class traning001 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		double[] score;
 		double sum = 0;
@@ -16,6 +15,6 @@ public class traning001 {
 		average = sum / (double) score.length;
 		System.out.printf("합계는 %.13f\n", sum);
 		System.out.printf("평균은 %.2f", average);
-		// 확인용 주석 더 확인 안해도 되겠는데?
+
 	}
 }
