@@ -13,6 +13,7 @@ public class traning004 {
 				System.out.print(sum + " ");
 				if (j == 2) {
 					System.out.println();
+					// ok
 				}
 
 			}
