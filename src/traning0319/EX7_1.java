@@ -1,4 +1,4 @@
-package tranning0319;
+package traning0319;
 
 class Tv {
 	boolean power;

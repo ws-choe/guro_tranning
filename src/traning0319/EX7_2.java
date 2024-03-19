@@ -1,4 +1,4 @@
-package tranning0319;
+package traning0319;
 
 public class EX7_2 {
 

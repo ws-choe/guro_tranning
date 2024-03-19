@@ -1,4 +1,4 @@
-package tranning0319;
+package traning0319;
 
 class PM {
 	int x, y;

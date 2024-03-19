@@ -1,4 +1,4 @@
-package tranning0319;
+package traning0319;
 
 class par {
 	int x = 86;
