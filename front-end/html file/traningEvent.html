@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event</title>
+</head>
+<body>
+  <!-- 이벤트 등록 
+    1. 인라인 방식
+    2. 프로퍼티 리스너
+    3. 이벤트 등록 메서드 -->
+  <!-- <button onclick="clickEvent()">클릭</button>
+  <script>
+    function clickEvent(){
+      alert("click") //경고창(팝업)
+    }
+  </script> -->
+  <!-- 2. 프로퍼티 리스너 -->
+<!-- <button>클릭</button>
+<script>
+  const btnEl = document.querySelector("button");
+  btnEl.onclick = function(){
+    alert("프로퍼티 리스너 표현식");
+  }
+  btnEl.onclick = () => { // 화살표 함수, 재사용 불가.
+    alert("프로퍼티 리스너 화살표");
+  }
+  btnEl.onclick = clickEvent;
+  function clickEvent(){ // 재사용 가능
+    alert("프로퍼티 리스너 선언");
+  }
+</script> -->
+<!-- 3. 이벤트 등록 메서드로 이벤트 등록 
+  <노드>.addEventListener("이벤트 타입", 이벤트 함수)-->
+  <button>클릭</button>
+  <script>
+    const btnEl = document.querySelector("button");
+    btnEl.addEventListener("click", function(){ //클릭하면 이벤트 리스너에 등록된 함수를 실행
+      alert("addEventListener 등록");
+    })
+  </script>
+</body>
+</html>

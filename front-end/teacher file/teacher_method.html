@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메서드 제어, 노드 생성</title>
+  <!-- <style>
+    .fz40 {
+      font-size: 40px;
+    }
+  </style> -->
+</head>
+<body>
+<!-- <a href="https://www.naver.com" class="fz40">네이버</a> -->
+<p>text</p>
+<a href="https://www.google.com">구글</a>
+<script>
+  // 노드 생성
+  const h3El = document.createElement("h3");
+  document.body.appendChild(h3El);
+  const aEl = document.createElement("a");  // 생성
+  document.body.appendChild(aEl);  // 연결
+  
+  const h3TxtEl = document.createTextNode("링크목록");
+  document.querySelector("h3").appendChild(h3TxtEl);
+  const txtEl = document.createTextNode("네이버");  // 요소안에 텍스트를 생성
+  document.querySelector("a").appendChild(txtEl);   
+
+  const hrefAttr = document.createAttribute("href");
+  hrefAttr.value = "https://www.naver.com";
+  document.querySelector("a").setAttributeNode(hrefAttr);
+  
+  // 요소 삭제
+  const pEl =document.querySelector("p");  
+  pEl.parentNode.removeChild(pEl);
+
+  // const aEl = document.querySelector("a");
+  // const href = aEl.getAttribute("href");  // 속성값을 가져올 때
+  // console.log(href);
+  // aEl.setAttribute("href", "https://www.daum.net");  // 속성값을 설정 setAttribute("속성명", "속성값")
+  // aEl.innerText = "다음";
+  // aEl.setAttribute("target", "_blank"); // classList.add
+  // // aEl.setAttribute("class", "fz40");
+  // aEl.removeAttribute("class");   // 속성 삭제   classList.remove
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>method</title>
+</head>
+<body>
+  <a href="http://www.google.com">네이버</a>
+  <script>
+    // 노드 생성
+    const h3El = document.createElement("h3");
+    document.body.appendChild(h3El);
+    const aEl = document.createElement("a");
+    document.body.appendChild(aEl);
+    
+    const h3TxtEl = document.createTextNode("링크목록");
+    document.querySelector("3").appendChild(h3TxtEl);
+    const txtEl = document.createTextNode("네이버"); // 요소 안에 텍스트 생성
+    document.querySelector("a").appendChild(txtEl);
+
+    const hrefAttr = document.createAttribute("href");
+    hrefAttr.value = "https://www.naver.com";
+    document.querySelector("a").setAttributeNode(hrefAttr);
+
+    const pEl = document.querySelector("p");
+    pEl.parentNode.removeChild(pEl);
+    // const aEl = document.querySelector("a");
+    // const href = aEl.getAttribute("href"); // href라는 속성값을 가져온다는 것
+    // console.log(href);
+    // aEl.setAttribute("href", "https://www.daum.net"); // 속성값을 설정 setAttribute("속성명","속성값")
+    // aEl.innerText = "다음";
+    // aEl.setAttribute("target", "_blank"); // 새 창 열리는 속성값으로 변경
+  </script>
+</body>
+</html>

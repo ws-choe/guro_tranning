@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 제어하기</title>
+</head>
+<body>
+  <form>
+    <label><input type="radio" value="apple">사과</label>
+    <label><input type="radio" value="banana">바나나</label>
+    <label><input type="radio" value="orange">오렌지</label>
+    <label><input type="radio" value="melon">멜론</label>
+  </form>
+  <button type="submit" onclick="checkboxShow()">전송</button>
+
+  <form name="frm1">
+    <label for="userid">ID</label>
+    <input type="text" id="userid" name="userid">
+    <label for="age">나이</label>
+    <input type="text" id="age" name="age">
+    <label for="gender">성별</label>
+    <select id="gender" name="gender">
+      <option value="male">남자</option>
+      <option value="female">여자</option>
+    </select>
+    <button type="submit">전송</button>
+  </form>
+  <!-- <form name="frm2">
+    <input type="text" name="username">
+  </form>  
+  <form name="frm3">
+    <input type="text" name="usernick">
+  </form> -->
+  <script>
+    function checkboxShow(){
+      const checkboxEls = document.querySelectorAll("[type='radio']");
+        for(let i = 0; i < checkboxEls.length; i++){
+          if(checkboxEls[i].checked === true){
+            document.write(checkboxEls[i].value + "<br>");
+        }
+      }
+    }
+  </script>
+</html>

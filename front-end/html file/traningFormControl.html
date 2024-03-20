@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 제어</title>
+</head>
+<body>
+  <form>
+    <label><input type = "radio" value="apple">사과</label>
+    <label><input type = "radio" value="banana">바나나</label>
+    <label><input type = "radio" value="orange">오렌지</label>
+    <label><input type = "radio" value="melon">멜론</label>
+  </form>
+
+<form name=""frm1">
+  <label for="userid">
+
+  </label>
+</form>
+
+  <!-- 이벤트: 나와 브라우저 사이에서 상호적으로 발생되는 특정 시점 -->
+<button type = "submit" onclick="checkboxShow()">전송</button> <!-- onclick: 마우스 이벤트 -->
+<script>
+  function checkboxShow(){
+    const checkboxEls = document.querySelectorAll("[type='radio']");
+      for(let i = 0; i <checkboxEls.length; i++){
+        if(checkboxEls[i].checked === true){
+            document.write(checkboxEls[i].value + "<br>");
+        }
+      }
+  }
+</script>
+
+</body>
+</html>

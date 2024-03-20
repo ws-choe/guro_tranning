@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>콘텐츠 조작</title>
+  <!-- <script defer src="/JS/dom.js"></script> -->
+  <style>
+    .active {
+      color: aliceblue;
+      font-size: 20px;
+      background-color: red;
+      font-weight: bold;
+    }
+    .red-color{
+      color: red;
+    }
+    .fz20 {
+      font-size: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <button data-cnt="10">가방 구매</button>
+  <button data-cnt="0">신발 구매</button>
+  <!-- <p id="title" class="fz20">Hello, <span style="display: none;">JavaScript!</span></p> display 속성을 none로 하면 화면에 출력되지않음. -->
+  <!-- <p id="textContent"></p>
+  <p id="innerText"></p>
+  <p id="innerHTML"></p> -->
+  <script>
+    const buttonEls = document.querySelectorAll("button"); 
+    buttonEls.forEach((el) => {
+      // console.log(el.dataset.cnt); // data-* 내가 정의한 속성에 대한 정보를 가져올 때
+      el.dataset.cnt = 50; // 내가 작성한 속성(data-cnt)의 값을 변경할 때
+    })
+    // const pEl = document.querySelector("#title"); //pEl변수에 대입.
+    // setInterval(function(){
+    //   pEl.classList.toggle("red-color"); //반복 실행
+    // })
+    // pEl.classList.remove("red-color");
+    // pEl.classList.add("red-color", "fz20");
+    // pEl.style.color = "white";
+    // pEl.style.backgroundColor = "red";
+    // pEl.style.fontSize = "20px";
+
+    // document.querySelector("#textContent").textContent = '<strong>textContent</strong>';
+    // document.querySelector("#innerText").innerText = '<strong>innerText</strong>'; //innertext, textcontent 태그 입력되어도 하나의 문자로 취급
+    // document.querySelector("#innerHTML").innerHTML = '<strong>innerHTML</strong>';
+
+    // document.getElementById("title").textContent // Hello, JavaScript! 내용만 선택하고 싶을때,
+    // document.getElementById("title").innerText // Hello 내용만 선택하고 싶을 때,
+    // document.getElementById("title").innerHTML // <span style="display: none;">JavaScript!</span> 내용이 출력됨.
+
+    // console.log(document.getElementById("title").textContent)
+    // console.log(document.getElementById("title").innerText)
+    // console.log(document.getElementById("title").innerHTML) -->
+    
+  </script> 
+</body>
+</html>
