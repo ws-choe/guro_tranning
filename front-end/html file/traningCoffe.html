@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coffee</title>
+  <link rel="stylesheet" href="/front-end/css file/coffe.css">
+</head>
+<body>
+  <div id = "container">
+    <h1>에디오피아 게뎁</h1>
+    <div id = "prod-pic">
+      <img id = "cGel" src="/front-end/image file/coffee-gray.jpg">
+      <div id = "smallPic">
+        <img class="small" src="/front-end/image file/coffee-gray.jpg">
+        <img class="small" src="/front-end/image file/coffee-blue.jpg">
+        <img class="small" src="/front-end/image file/coffee-pink.jpg">
+      </div>
+    </div>
+    <div id = "desc">
+      <ul>
+        <li>상품명: 에데오피아 게뎁</li>
+        <li id = "cost">판매가: 9,000원</li>
+        <li>배송비: 3,000원<br>(50,000원이상 구매 시 무료)</li>
+        <li>적립금: 180원(2%)</li>
+        <li>로스팅: 2024.03.10</li>
+        <li><button>장바구니 담기</button></li>
+      </ul>
+        <a href="#">설명 보기</a>
+    </div>
+  </div>
+  <!-- script file -->
+  <script>
+    const cGel = document.querySelector("#cGel");
+    const smallPics = document.querySelectorAll(".small");
+
+    for(let i = 0; i < smallPics.length; i++){
+      smallPics[i].addEventListener("click", changePic);
+    }
+    function changePic(){
+      const newPic = this.src; //자기 자신을 넘기는 것
+      cGel.setAttribute("src", newPic);
+    }
+
+  </script>
+</body>
+</html>

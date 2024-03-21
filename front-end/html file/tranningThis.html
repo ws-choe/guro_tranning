@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 이벤트 객체와 this -->
+<body>
+  <button>버튼</button>
+  <a href = "https://www.naver.com">네이버이동</a>
+  <a href = "https://www.daum.com">다음이동</a>
+  <p>text-1</p>
+  <p>text-2</p>
+  <p>text-3</p>
+
+  <script>
+    const pEls = document.querySelectorAll("p");
+    pEls.forEach((el) => {
+      el.addEventListener("click",(e) => {
+        // console.log(this);//화살표 함수 사용시 콘솔창에서 window를 가리킴.
+         //this의 범위가 window가 되는 것.
+        console.log(e.target);//이벤트가 발생한 노드를 가져옴
+       
+      });
+    })
+      // el.addEventListener("click", function(){
+      //   console.log(this);
+      //   if(this.style.color === 'red') {
+      //     this.style.color = 'black';
+      //   } else{
+      //     this.style.color = 'red';
+      //   } //조건문, 클릭해서 레드 색상이 아니면 레드로 바꾸고 레드 색상이면 블랙으로 바꾸는 원리.
+      //   // console.log(this); //this: 이벤트가 발생된 노드를 가리키는 것
+      // // this는 const pEls를 가리킨듯?
+      // })
+    // })
+
+    const btnEl = document.querySelector("button")
+    btnEl.addEventListener("mouseover",function(event){ //event 객체
+      console.log(event);
+    })
+    const aEls = document.querySelectorAll("a");
+    for(let i = 0; i < aEls.length; i++){
+      aEls[i].addEventListener("click", function(e){
+        //기본 이벤트 취소
+        e.preventDefault();
+      })
+    }
+
+
+  </script>
+
+</body>
+</html>

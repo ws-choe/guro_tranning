@@ -6,7 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <script src = "/front-end/js file/test.js"></script>
+    <div class="con">
+
+    </div>
+    <script>
+        const newButton = document.createElement('button');
+        newButton.textContent = '당장 클릭';
+        newButton.addEventListener('click', () => {console.log('클릭되었습니다!')}); // 클릭하면 ()메서드 실행 화살표 함수 따라 {}내용이 실행됨.
+        document.body.appendChild(newButton); //body부모에 newButton라는 자식 요소 붙이는것
+
+        const pEl = document.createElement("p");
+        pEl.innerHTML =
+        '<ul>\
+            <li>사과</li>\
+        </ul>';
+        document.querySelector(".con").appendChild(pEl); //con라는 이름 가진 div부모에 pEl라는 자식요소 붙이는것
+    </script>
+
 </body>
 </html>
 <!-- 테스트 -->

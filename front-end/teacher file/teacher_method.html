@@ -14,8 +14,9 @@
 <!-- <a href="https://www.naver.com" class="fz40">네이버</a> -->
 <p>text</p>
 <a href="https://www.google.com">구글</a>
-<script>
-  // 노드 생성
+<script>  
+
+  //노드 생성
   const h3El = document.createElement("h3");
   document.body.appendChild(h3El);
   const aEl = document.createElement("a");  // 생성
@@ -30,7 +31,7 @@
   hrefAttr.value = "https://www.naver.com";
   document.querySelector("a").setAttributeNode(hrefAttr);
   
-  // 요소 삭제
+  //요소 삭제
   const pEl =document.querySelector("p");  
   pEl.parentNode.removeChild(pEl);
 

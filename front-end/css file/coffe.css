@@ -1,0 +1,47 @@
+#container{
+  width: 600px;
+  margin: auto;
+  /* background-color: aqua; test */
+}
+
+#prod-pic, desc{
+  float : left;
+}
+
+#prod-pic {
+  margin: 20px 20px auto 10px;
+}
+
+#cGel{
+  width: 235px;
+  box-shadow: 5px 5px 5px black; /*오른쪽 x축, 아래 y축, blur, spread, color 그리고 콤마해서 그림자 추가 가능.*/
+  outline: 1px dashed white;
+  outline-offset: -7.5px;
+}
+
+#smallPic img:hover{
+ cursor: pointer;
+}
+
+.small {
+  margin: 15px 0px 0px 0px;
+  width: 60px;
+  height: 60px;
+}
+ul {
+  list-style: none;
+}
+
+#cost{
+  color: blue;
+  font-weight: bold;
+}
+
+button {
+  width:200px
+}
+
+a { 
+  text-decoration: none;
+  cursor: pointer;
+}

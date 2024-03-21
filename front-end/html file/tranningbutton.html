@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경색 바꾸기</title>
+  <link rel="stylesheet" href="/front-end/css file/0321.css">
+</head>
+<body>
+  <ul>
+    <li><a href="#" onclick="changeEl('green')">Green</a></li>
+    <li><a href="#" onclick="changeEl('orange')">Orange</li>
+    <li><a href="#" onclick="changeEl('purple')">Purple</a></li>
+  </ul>
+  <br>
+    <div></div>
+  <script>
+    function changeEl(color){
+      const result = document.querySelector("div");
+      result.style.backgroundColor = color; //color는 인수를 받는 매개변수, 이벤트 객체라고 함.
+    }
+  </script>
+
+
+</body>
+</html>
