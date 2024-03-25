@@ -1,0 +1,116 @@
+/* 기본 스타일 CSS */
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4; /* 줄간격 */
+  color: #333;
+}
+
+/* 하이퍼링크 밑줄 제거는 기본 태그에 처리해주는 것이 좋음 */
+a {
+  text-decoration: none;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #F6F5F0;
+}
+
+header .inner {
+width: 1100px;
+height: 120px;
+margin: 0 auto;
+position: relative;
+}
+
+/* 요소의 수직 정렬 */
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+header .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+
+header .sub-menu ul.menu {
+  display: flex;
+}
+
+/* a요소는 인라인 요소이므로 여백은 위아래값 사용 불가 */
+/* display를 block로 변경 시 여백 위아래 값 사용 가능 */
+header .sub-menu ul.menu li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 13px;
+  color: #656565;
+}
+
+header .sub-menu ul.menu li {
+  position: relative;
+}
+
+/* 구분선 추가 */
+header .sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  position: absolute;
+  background-color: #e5e5e5;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+}
+
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+
+header .sub-menu ul.menu li a:hover {
+  color : #000;
+}
+
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* border 사이즈를 width, height만큼 계산 */
+  border-radius: 5px;
+  outline: none; /* 바깥쪽 테두리 */
+  color: #777;
+  background-color: #fff;
+  font-size: 12px;
+  transition: width .4s;
+}
+
+/* 포커싱 시 효과 */
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #ea9926;
+}
+
+header .sub-menu .search {
+  position: relative;
+  height: 34px;
+}
+
+header .sub-menu .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: .4s;
+}
+
