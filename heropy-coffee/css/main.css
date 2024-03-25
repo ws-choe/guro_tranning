@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   line-height: 1.4; /* 줄간격 */
   color: #333;
+  height: 4000px;
 }
 
 /* 하이퍼링크 밑줄 제거는 기본 태그에 처리해주는 것이 좋음 */
@@ -12,17 +13,37 @@ a {
   text-decoration: none;
 }
 
+/* img 속성이 inline을 기본값으로 가지기 때문에 레이아웃 개념으로 바꿔주는 것 */
+img {
+  display: block;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
 /* 헤더 스타일 */
 header {
   background-color: #F6F5F0;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
 }
 
-header .inner {
+header > .inner {
+  height: 120px;
+}
+
+/* header .inner {
 width: 1100px;
 height: 120px;
 margin: 0 auto;
 position: relative;
-}
+} */
 
 /* 요소의 수직 정렬 */
 header .logo {
@@ -114,3 +135,97 @@ header .sub-menu .search .material-icons {
   transition: .4s;
 }
 
+header .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+}
+
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+header .main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #ea9926;
+  border-radius: 6px 6px 0 0;
+}
+
+header .main-menu .item .item__contents {
+  background-color: orange;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+
+header .main-menu .item:hover .item__contents {
+  display: block;
+}
+
+/* 드롭다운 */
+
+header .main-menu .item .item__contents .contents__menu {
+  background-color: #2C2A29;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul{
+  padding: 20px 0;
+  display: flex;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li{
+  width: 220px;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #ea9926;
+}
+
+header .main-menu .item .item__contents .contents__texture {
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url(/heropy-coffee/images/main_menu_pattern.jpg);
+}
+
+header .main-menu .item .item__contents .contents__texture h4 {
+  color: #999;
+  font-weight: 900;
+}
+
+header .main-menu .item .item__contents .contents__texture p {
+  color: #ea9926;
+  margin: 4px 0 14px;
+}
+
+/* Badges */
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+
+header .badges .badge {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+  cursor: pointer;
+  overflow: hidden;
+}
