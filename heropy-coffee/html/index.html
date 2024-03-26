@@ -30,6 +30,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <!-- 타임라인 기반 자바스크립트 라이브러리, gsap애니메이션 사용법 링크: https://lpla.tistory.com/106 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <!-- 자바스크립트 --> <!-- JS코드는 HTML구조 모두 해석된 이후 동작되어야 하기에 defer 속성 필요 -->
   <script defer src="/heropy-coffee/js/main.js"></script>
 </head>
@@ -107,7 +109,6 @@
                 <p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
               </div>
             </div>
-          </div>
         </li>
         <li class="item">
           <div class="item__name">MENU</div>
@@ -360,5 +361,27 @@
       </div>
     </div>
   </header>
+
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+      <div class="title fade-in">
+        <img src="\heropy-coffee\images\visual_title.png" alt="DELIGHTFUL START TO THE YEARS" />
+        <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="\heropy-coffee\images\visual_cup1.png" alt="Cup1" class="cup1 image" />
+        <img src="\heropy-coffee\images\visual_cup1_text.png" alt="헤이즐넛 아메리카노" class="cup1 text" />
+      </div>
+      <div class="fade-in">
+        <img src="\heropy-coffee\images\visual_cup2.png" alt="Cup2" class="cup2 image" />
+        <img src="\heropy-coffee\images\visual_cup2_text.png" alt="카라멜 크럼블 모카" class="cup2 text" />
+      </div>
+      <div class="fade-in">
+        <img src="\heropy-coffee\images\visual_spoon.png" alt="Spoon" class="spoon" />
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>

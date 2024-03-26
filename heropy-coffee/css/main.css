@@ -135,6 +135,7 @@ header .sub-menu .search .material-icons {
   transition: .4s;
 }
 
+/* main-menu 작업 영역 */
 header .main-menu {
   position: absolute;
   bottom: 0;
@@ -147,7 +148,7 @@ header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
   font-size: 13px;
-}
+} 
 
 header .main-menu .item:hover .item__name {
   background-color: #2c2a29;
@@ -156,7 +157,7 @@ header .main-menu .item:hover .item__name {
 }
 
 header .main-menu .item .item__contents {
-  background-color: orange;
+  
   width: 100%;
   position: fixed;
   left: 0;
@@ -228,4 +229,124 @@ header .badges .badge {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
   cursor: pointer;
   overflow: hidden;
+}
+
+/* VISUAL 작업 영역 */
+.visual {
+background-image: url("/heropy-coffee/images/visual_bg.jpg");
+background-position: center;
+}
+
+.visual .inner {
+  margin-top: 120px;
+  height: 646px;
+}
+
+.visual .title {
+  position: absolute;
+  top: 40px;
+  left: -10px;
+}
+
+.visual .title .btn {
+  position: absolute;
+  top: 230px;
+  left: 148px;
+}
+
+.visual .cup1.image {
+  position: absolute;
+  bottom: 0;
+  right: -47px;
+}
+
+.visual .cup1.text {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.visual .cup2.image {
+position: absolute;
+bottom: 0;
+right: 162px;
+}
+
+.visual .cup2.text {
+position: absolute;
+top:186px;
+right: 412px;
+}
+
+.visual .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 275px;
+}
+
+/* 전역 버튼 스타일 */
+.btn {
+width: 130px;
+padding: 10px;
+border: 2px solid #333;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 16px;
+font-weight: 700;
+color: #333;
+text-align: center;
+cursor: pointer;
+display: block;
+transition: .4s;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 지역 버튼 스타일(btn--brown 외) */
+.btn.btn--reverse {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #333;
+}
+
+.btn.btn--brown {
+color: #592b18;
+border-color: #592B18;
+}
+
+.btn.btn--brown:hover {
+  color: #fff;
+  background-color: #592B18;;
+}
+
+.btn.btn--gold {
+  color: #d9aa8a;
+  border-color: #d9aa8a;
+}
+
+.btn.btn--gold:hover {
+  color: #fff;
+  background-color: #d9aa8a;
+}
+
+.btn.btn--white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn.btn--white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+/* 페이드인 애니메이션 효과 */
+.visual .fade-in {
+  opacity: 0;
 }
