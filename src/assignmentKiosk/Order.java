@@ -35,10 +35,10 @@ public class Order {
 
 	public double totalPrice() {
 		double total = 0.0;
-		for (Food menu : basket) {
+		for (Food menu : basket) { // basket 객체가 소진될 때까지 menu 변수에 할당.
 			total += Double.parseDouble(menu.getPrice().substring(2));
 		}
 		return total;
-	}
+	} // double.parseDouble(); : 문자열을 실수로 반환. substring은 앞에 문자열 2개 제거.
 
 }// 클래스 종료
