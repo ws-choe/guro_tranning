@@ -34,3 +34,5 @@ public class traning1_7 {
 
 	}
 }
+
+//수정

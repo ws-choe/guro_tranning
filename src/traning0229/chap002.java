@@ -40,3 +40,4 @@ public class chap002 {
 			System.out.print("*");
 	}
 }
+//수정
